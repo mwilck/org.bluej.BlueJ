@@ -65,13 +65,13 @@
       "name": "bluej-startup",
       "buildsystem": "simple",
       "build-commands": [
-        "install -Dm755 bluej /app/bin/org.bluej.BlueJ",
+        "install -Dm755 bluej.sh /app/bin/org.bluej.BlueJ",
         "install -Dm644 org.bluej.BlueJ.desktop /app/share/applications/org.bluej.BlueJ.desktop",
         "install -Dm644 org.bluej.BlueJ.appdata.xml /app/share/metainfo/org.bluej.BlueJ.appdata.xml"
       ],
       "sources": [{
         "type": "file",
-        "path": "bluej"
+        "path": "bluej.sh"
       },{
         "type": "file",
         "path": "org.bluej.BlueJ.desktop"
