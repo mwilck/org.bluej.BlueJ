@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  workflow_dispatch:
+name: Flatpak test build
+jobs:
+  flatpak:
+    name: "Flatpak"
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-48
+      options: --privileged
+    steps:
+    - uses: actions/checkout@v4
+    - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
+      with:
+        bundle: bluej.flatpak
+        manifest-path: org.bluej.BlueJ.json
+        cache-key: flatpak-builder-${{ github.sha }}
+        upload-artifact: true
