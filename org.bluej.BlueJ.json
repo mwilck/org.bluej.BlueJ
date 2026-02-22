@@ -61,9 +61,9 @@
       ],
       "sources": [
 	{
-          "type": "git",
-          "url": "https://github.com/mwilck/BlueJ-Greenfoot",
-	  "commit": "072ea4c572b15e944ca39e0c7f6422ee215a022c"
+	  "type": "git",
+	  "url": "https://github.com/k-pet-group/BlueJ-Greenfoot",
+	  "commit": "36ce5ceb9b8ce30a98707fcd3f09db77433f0e2d"
 	},
 	{
 	  "type": "file",
